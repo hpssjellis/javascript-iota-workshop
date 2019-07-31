@@ -2,6 +2,20 @@
 
 Simple examples to help a developer work through interacting with the IOTA network. 
 
+my gitpod snapshot at
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/be86cc59-7b7b-49f5-893a-761e0d964ba8)
+
+run code using this command.
+
+
+node public/2.1-send-hello.js
+ 
+ 
+
+
+
+
 ### Getting started
 
 To start playing with these examples run the following commands:
