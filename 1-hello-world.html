@@ -1,1 +1,18 @@
-duh
+const iotaLibrary = require('@iota/core')
+
+<div id="myDiv01">...<div>
+
+<input type=button value="hello world" onclick="{
+   alert()                                             
+}">
+  
+const iota = iotaLibrary.composeAPI({
+  provider: 'https://nodes.devnet.thetangle.org:443'
+})
+
+iota
+  .getNodeInfo()
+  .then(response => console.log(response))
+  .catch(err => {
+    console.error(err)
+  })
