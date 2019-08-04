@@ -3,8 +3,8 @@ const iotaLibrary = require('@iota/core')
 <div id="myDiv01">...<div>
 
 <input type=button value="hello world" onclick="{
-   alert()                                             
-}">
+   document.getElementById('myDiv01').innerHTML = 'wow'                                             
+}"><br><br>
   
 const iota = iotaLibrary.composeAPI({
   provider: 'https://nodes.devnet.thetangle.org:443'
