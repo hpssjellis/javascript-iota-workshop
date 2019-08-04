@@ -2,6 +2,12 @@
 
 Simple examples to help a developer work through interacting with the IOTA network. 
 
+
+Latest by Jeremy Ellis
+
+simplified the examples and added a gitpod for using the originals
+
+
 my gitpod snapshot at
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/be86cc59-7b7b-49f5-893a-761e0d964ba8)
@@ -13,7 +19,9 @@ node public/2.1-send-hello.js
  
  
 
+end update b Jeremy Ellis
 
+---------------------------------------------------------------------------------------
 
 
 ### Getting started
