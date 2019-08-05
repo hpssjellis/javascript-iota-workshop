@@ -1,8 +1,12 @@
 
 
-
 var express = require('express');
 var app = express();
+
+
+var my1 = require('./code/1-hello-world.js');
+var my2point1 = require('./code/2.1-send-hello.js');
+var my2point2 = require('./code/2.2-fetch-hello.js');
 
 // Routes
 
@@ -10,40 +14,13 @@ var app = express();
 
 
 app.get('/', function(req, res) {
-  
-  res.send('code/2.1-send-hello.js');
-  
-  
-  /*
-  
-  
-  
-  const iotaLibrary = require('@iota/core')
 
-  const iota = iotaLibrary.composeAPI({
-  provider: 'https://nodes.devnet.thetangle.org:443'
-})
-
-iota
-  .getNodeInfo()
-  .then(response => {
-  
-    console.log(response)
-   // res.send(JSON.stringify(response, null, 3));      
-    res.send('<pre id="myPre01">'+JSON.stringify(response, null, 3)+'</pre>');                           
-   })
-  .catch(err => {
-    console.error(err)
-  })
+  res.send('Check Node console');
 
 
 
 
 
-  */
-  
-  
-  
 
 });
 
