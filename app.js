@@ -11,9 +11,16 @@ var app = express();
 
 app.get('/', function(req, res) {
   
+  res.send('code/2.1-send-hello.js');
+  
+  
+  /*
+  
+  
+  
   const iotaLibrary = require('@iota/core')
 
-const iota = iotaLibrary.composeAPI({
+  const iota = iotaLibrary.composeAPI({
   provider: 'https://nodes.devnet.thetangle.org:443'
 })
 
@@ -29,7 +36,11 @@ iota
     console.error(err)
   })
 
-  
+
+
+
+
+  */
   
   
   
