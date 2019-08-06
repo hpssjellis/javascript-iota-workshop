@@ -1,5 +1,6 @@
 
 
+
 var express = require('express');
 var app = express();
 
@@ -21,14 +22,14 @@ var my6 = require('./code/6-zmq-listen.js');
 */
 
 
-var my7point1 = require('./code/7.1-mam-public-send.js');
-var my7point2 = require('./code/7.2-mam-public-fetch.js');
-var my7point3 = require('./code/7.3-mam-private-send.js');
-var my7point4 = require('./code/7.4-mam-private-fetch.js');
+//var my7point1 = require('./code/7.1-mam-public-send.js');
+//var my7point2 = require('./code/7.2-mam-public-fetch.js');
+//var my7point3 = require('./code/7.3-mam-private-send.js');
+//var my7point4 = require('./code/7.4-mam-private-fetch.js');
 //var my7point5 = require('./code/7.5-mam-public-watch.js');
 
 
-var my8point1 = require('./code/8.1-detailed-transaction-creation.js');
+//var my8point1 = require('./code/8.1-detailed-transaction-creation.js');
 
 
 
@@ -41,10 +42,10 @@ app.get('/', function(req, res) {
        global.myResponse22 + '<br>' +
        global.myResponse31 + '<br>' +
        global.myResponse32 + '<br>' +
-       global.myResponse4 + '<br>' 
-  
-  
-  
+       global.myResponse4 + '<br>'
+
+
+
    res.send(myCombined);
 
 });
@@ -57,3 +58,4 @@ app.get('/', function(req, res) {
 var port = process.env.PORT || 3000;
 app.listen(port);
 console.log('Listening on localhost:'+ port);
+
