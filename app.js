@@ -1,6 +1,5 @@
 
 
-
 var express = require('express');
 var app = express();
 
@@ -38,11 +37,11 @@ var my6 = require('./code/6-zmq-listen.js');
 
 app.get('/', function(req, res) {
    let myCombined = global.myResponse1 + '<br>' +
-       global.myResponse21 + '<br>' +
-       global.myResponse22 + '<br>' +
-       global.myResponse31 + '<br>' +
-       global.myResponse32 + '<br>' +
-       global.myResponse4 + '<br>'
+       global.myResponse21 + '<br>' +        // needs seed
+     //  global.myResponse22 + '<br>' +      // assume address but prints too much information
+       global.myResponse31 + '<br>' +        // needs seed
+       global.myResponse32 + '<br>' +        // needs address to check, is that a seed??
+       global.myResponse4 + '<br>'           // needs seed with tokens
 
 
 
