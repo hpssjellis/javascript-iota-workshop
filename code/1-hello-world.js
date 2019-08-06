@@ -10,7 +10,11 @@ const iota = iotaLibrary.composeAPI({
 
 iota
   .getNodeInfo()
-  .then(response => console.log(response))
+  .then(response => {
+  
+      console.log(response)
+      myResponse1 = response;  // hopefully this is global                 
+   })
   .catch(err => {
     console.error(err)
   })
