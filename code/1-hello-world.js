@@ -13,7 +13,7 @@ iota
   .then(response => {
   
       console.log(response)
-      myResponse1 = response;  // hopefully this is global                 
+      global.myResponse1 = response;  // hopefully this is global                 
    })
   .catch(err => {
     console.error(err)
