@@ -37,10 +37,10 @@ var my8point1 = require('./code/8.1-detailed-transaction-creation.js');
 
 app.get('/', function(req, res) {
    let myCombined = global.myResponse1 + '<br>' +
-       global.myResponse2.1 + '<br>' +
-       global.myResponse2.2 + '<br>' +
-       global.myResponse3.1 + '<br>' +
-       global.myResponse3.2 + '<br>' +
+       global.myResponse21 + '<br>' +
+       global.myResponse22 + '<br>' +
+       global.myResponse31 + '<br>' +
+       global.myResponse32 + '<br>' +
        global.myResponse4 + '<br>' 
   
   
