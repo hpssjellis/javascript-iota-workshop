@@ -23,12 +23,12 @@ const main = async () => {
   // Construct a TX to our new address
   const transfers = [
     {
-      value: 500,
+      value: 3,
       address: receivingAddress[0],
       tag: 'MYMAGIC'
     }
   ]
-  console.log('Sending 500i to ' + receivingAddress)
+  console.log('Sending 3i to ' + receivingAddress)
 
   try {
     // Construct bundle and convert to trytes
@@ -38,8 +38,8 @@ const main = async () => {
 
     console.log('Completed TXs')
     response.map(tx => console.log(tx))
-    
-        global.myResponse4 = "<h2>4-send-tokens.js</2>" + '<pre id="myPre01">'+JSON.stringify(tx, null, 3)+'</pre>' + "<hr>";  // hopefully this is global
+
+        global.myResponse4 = '<h2>4-send-tokens.js</h2>' + '<pre id="myPre01">'+JSON.stringify(tx, null, 3)+'</pre>' + '<hr>';  // hopefully this is global
 
   } catch (e) {
     console.log(e)
