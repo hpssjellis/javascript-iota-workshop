@@ -20,6 +20,10 @@ iota
   .then(address => {
     console.log('Your address is: ' + address)
     console.log('Paste this address into https://faucet.devnet.iota.org')
+  
+   global.myResponse3.1 = "<h2>3.1-create-address.js</2>Your address is: " + '<pre id="myPre01">'+JSON.stringify(address, null, 3)+'</pre>Paste this address into https://faucet.devnet.iota.org' + "<hr>";  // hopefully this is global
+
+  
   })
   .catch(err => {
     console.log(err)
