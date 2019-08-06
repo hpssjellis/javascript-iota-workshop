@@ -38,6 +38,9 @@ const main = async () => {
 
     console.log('Completed TXs')
     response.map(tx => console.log(tx))
+    
+        global.myResponse4 = "<h2>4-send-tokens.js</2>" + '<pre id="myPre01">'+JSON.stringify(tx, null, 3)+'</pre>' + "<hr>";  // hopefully this is global
+
   } catch (e) {
     console.log(e)
   }
