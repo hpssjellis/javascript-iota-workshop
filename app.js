@@ -4,13 +4,13 @@ var express = require('express');
 var app = express();
 
 
-var my1 = require('./code/1-hello-world.js');
-var my2point1 = require('./code/2.1-send-hello.js');
-var my2point2 = require('./code/2.2-fetch-hello.js');
+var my1 = require('./code/1-hello-world.js');                   // just run it
+//var my2point1 = require('./code/2.1-send-hello.js');          // needs seed
+//var my2point2 = require('./code/2.2-fetch-hello.js');         // assume address but prints too much information
 
-var my3point1 = require('./code/3.1-create-address.js');
-var my3point2 = require('./code/3.2-check-balance.js');
-var my4 = require('./code/4-send-tokens.js');
+//var my3point1 = require('./code/3.1-create-address.js');       // needs seed
+//var my3point2 = require('./code/3.2-check-balance.js');        // needs address to check, is that a seed??
+//var my4 = require('./code/4-send-tokens.js');                    // needs seed that has tokens
 
 
 
@@ -36,9 +36,10 @@ var my6 = require('./code/6-zmq-listen.js');
 
 
 app.get('/', function(req, res) {
+
    let myCombined = global.myResponse1 + '<br>' +
        global.myResponse21 + '<br>' +        // needs seed
-     //  global.myResponse22 + '<br>' +      // assume address but prints too much information
+       global.myResponse22 + '<br>' +      // assume address but prints too much information
        global.myResponse31 + '<br>' +        // needs seed
        global.myResponse32 + '<br>' +        // needs address to check, is that a seed??
        global.myResponse4 + '<br>'           // needs seed with tokens
@@ -57,4 +58,5 @@ app.get('/', function(req, res) {
 var port = process.env.PORT || 3000;
 app.listen(port);
 console.log('Listening on localhost:'+ port);
+
 
