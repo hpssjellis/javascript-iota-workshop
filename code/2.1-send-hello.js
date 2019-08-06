@@ -32,7 +32,7 @@ iota
   .then(trytes => iota.sendTrytes(trytes, (depth = 3), (mwm = 9)))
   .then(bundle => {
     console.log(bundle)
-    global.myResponse21 = "<h2>2.1-send-hello.js</h2>" + '<pre id="myPre01">'+JSON.stringify(bundle, null, 3)+'</pre>' + "<hr>";  // hopefully this is global
+    global.myResponse21 = '<h2>2.1-send-hello.js</h2>' + '<pre id="myPre01">'+JSON.stringify(bundle, null, 3)+'</pre>' + '<hr>';  // hopefully this is global
 
   })
   .catch(err => {
